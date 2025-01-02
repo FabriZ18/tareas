@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="todo-container">
+    <h1 class="title">Mis Tareas</h1>
+
+    <!-- Input para agregar nuevas tareas -->
+    <div class="add-task">
+      <input type="text" id="new-task-input" placeholder="Agregar nueva tarea..." />
+      <button id="add-task-button">Agregar</button>
+    </div>
+
+    <!-- Filtro para ver tareas completadas o no -->
+    <div class="filters">
+      <button class="filter" data-filter="all">Todas</button>
+      <button class="filter" data-filter="active">Pendientes</button>
+      <button class="filter" data-filter="completed">Completadas</button>
+    </div>
+
+    <!-- Lista de tareas -->
+    <ul id="task-list" class="task-list">
+      <!-- Las tareas se mostrarán aquí -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
